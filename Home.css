@@ -1,23 +1,43 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-main{
+header{
     width: 100%;
-    height: 100vh;
-    background: #333;
+    height: 10vh;
+    background-color:#66f4;
 }
-section{
+.game{
+    background-color: #000000;
+    height: 120vh;
+    width: 95%;
+    margin-left: 2.5%;
+   
+}
+.skin{
+   background-color: #d0ff00;
+   width: 100%;
+   height: 40vh;
+   flex-direction: column; 
+}
+.vava{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   width: 100%;
+   height: 40vh;
+}
+.cs{
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   width: 100%;
+   height: 40vh;
+   background-color: #fc0000;
+}
+footer{
+    background-color: #cf3333;
     width: 100%;
-    height: 35vh;
-    float: left;
-    padding: 1%;
+    height: 5vh;
 }
-#cs2{
-    background: #D97A15;
-}
-#valorant{
-    background: #F74352;
-}
-
