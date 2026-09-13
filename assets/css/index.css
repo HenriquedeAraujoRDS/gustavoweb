@@ -1,55 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-main{
-    width: 100%;
-    height: 100vh;
-    background: #999;
-}
-section{
-    width: 25%;
-    height: auto;
-    background: #ccc;
-    margin-left: 37.5%;
-    margin-top: 10vh;
-    float: left; /* descolar do main */
-    border-radius: 12px;
-    box-shadow: 1px 1px 3px #333;
-    padding: 1%;
-}
-section h2{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 1rem;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: #1e1e1e; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    max-width: 400px;
+    background: #2d2d2d; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border: 2px solid #444;
+}
+
+section h2 {
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    color: #333;
+    color: #d0ff00; 
+    margin-bottom: 20px;
 }
-section input{
+
+section input {
     width: 100%;
-    height: 35px;
-    margin-top: 2vh;
-    border: 0;
-    border-radius: 9px;
-    text-indent: 5%;
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    background: #1e1e1e;
+    border-radius: 6px;
+    text-indent: 15px;
     outline: none;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 0.85rem;
-    color: #333;
-}
-section button{
-    width: 100%;
-    height: 35px;
-    margin-top: 2vh;
-    border: 0;
-    border-radius: 9px;
-    text-indent: 5%;
-    outline: none;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #fff;
-    background: #333;
+    transition: 0.3s;
+}
+
+section input:focus {
+    border-color: #d0ff00;
+}
+
+section button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    color: #1e1e1e;
+    background: #d0ff00; 
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section button:hover {
+    background: #aacc00;
+}
+
+section .alternar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #aaa;
+    text-decoration: none;
+}
+
+section .alternar:hover {
+    color: #d0ff00;
 }

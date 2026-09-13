@@ -2,7 +2,7 @@ const cadastro = document.getElementById('cadastro');
 const login = document.getElementById('login');
 
 // começa mostrando o login
-cadastro.hidden = true;
+cadastro.hidden =true;
 
 document.querySelectorAll('.alternar').forEach(link => {
   link.addEventListener('click', (evento) => {
